@@ -1,8 +1,8 @@
 :root {
   --plum: #3A2430;
-  --plum-2: #4C3040;
-  --coral: #C46A7A;
-  --coral-ink: #A65364;
+  --plum-2: #4A3040;
+  --coral: #B87888;
+  --coral-ink: #96606E;
   --amber: #E4C9A8;
   --paper: #FFFFFF;
   --mist: #F7F3F4;
@@ -268,3 +268,16 @@ details p { margin-top: 10px; color: var(--ink-soft); max-width: 60ch; }
 
 .hero-inner.no-video { grid-template-columns: minmax(0, 34rem); }
 @media (max-width: 860px) { .hero-inner.no-video { grid-template-columns: 1fr; } }
+
+.brand-logo { display: block; height: 44px; width: auto; max-width: 200px; object-fit: contain; }
+.brand-logo.round { height: 48px; width: 48px; max-width: 48px; border-radius: 50%; background: #fff; object-fit: cover; box-shadow: 0 0 0 1px rgba(255,255,255,.18); }
+.brand-wordmark { display: flex; flex-direction: column; justify-content: center; line-height: 1; color: #fff; text-decoration: none; }
+.brand-wordmark .wm-name { font-weight: 600; font-size: 22px; letter-spacing: 0.01em; }
+.brand-wordmark .wm-sub { font-size: 9px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; opacity: .88; margin-top: 3px; }
+.brand-wordmark.better .wm-name { font-weight: 800; font-size: 23px; letter-spacing: -0.02em; text-transform: uppercase; }
+.brand-wordmark.better .wm-sub { letter-spacing: 0.18em; color: var(--coral); }
+.brand-wordmark.flamini .wm-name { font-weight: 500; font-size: 20px; letter-spacing: 0.02em; }
+@media (max-width: 720px) {
+  .brand-logo { height: 38px; max-width: 150px; }
+  .brand-wordmark .wm-name { font-size: 18px; }
+}
